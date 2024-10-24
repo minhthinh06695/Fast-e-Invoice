@@ -32,7 +32,16 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
+}
+
+.table-body {
+  max-height: 400px;
+  /* Hoặc chiều cao phù hợp với thiết kế của bạn */
+  overflow-y: auto;
+  display: block;
+  /* Cho phép cuộn cho tbody */
 }
