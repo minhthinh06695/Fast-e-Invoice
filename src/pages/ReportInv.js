@@ -63,6 +63,8 @@ const EInvoiceTable = () => {
         )
     );
 
+    
+
     const sortedInvoices = [...filteredInvoices].sort((a, b) => {
         if (sortColumn) {
             if (a[sortColumn] < b[sortColumn]) return sortOrder === "asc" ? -1 : 1;
@@ -76,6 +78,7 @@ const EInvoiceTable = () => {
         (currentPage - 1) * pageSize,
         currentPage * pageSize
     );
+    const totalRows = filteredInvoices.length;
 
     useEffect(() => {
         if (filteredInvoices.length === 0 && searchQuery !== "") {
@@ -137,6 +140,11 @@ const EInvoiceTable = () => {
                     </button>
                 </div>
             </div>
+
+            <div className="text-right mb-4">
+                <span>Total Rows: {totalRows}</span>
+            </div>
+            
             {error && (
                 <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded relative mb-4" role="alert">
                     <span className="block sm:inline">{error}</span>
