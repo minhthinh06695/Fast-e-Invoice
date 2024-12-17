@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/fbo-app/static/css/main.559a80c2.css",
+    "main.js": "/fbo-app/static/js/main.3a2441be.js",
+    "static/js/453.20920f53.chunk.js": "/fbo-app/static/js/453.20920f53.chunk.js",
+    "index.html": "/fbo-app/index.html",
+    "main.559a80c2.css.map": "/fbo-app/static/css/main.559a80c2.css.map",
+    "main.3a2441be.js.map": "/fbo-app/static/js/main.3a2441be.js.map",
+    "453.20920f53.chunk.js.map": "/fbo-app/static/js/453.20920f53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.559a80c2.css",
+    "static/js/main.3a2441be.js"
+  ]
+}
